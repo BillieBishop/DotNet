@@ -1,0 +1,17 @@
+Customers no insert
+
+SET IDENTITY_INSERT [dbo].[Provinces] ON
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (1, N'NL', N'Newfieland and Labrador')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (2, N'PE', N'Prince Edward Island')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (3, N'NS', N'Nova Scotia')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (4, N'NB', N'New Brunswick')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (5, N'QC', N'Quebec')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (6, N'ON', N'Ontario')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (7, N'MB', N'Manitoba')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (8, N'SK', N'Saskatchewan')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (9, N'AB', N'Alberta')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (10, N'BC', N'British Columbia')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (11, N'YT', N'Yukon')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (12, N'NT', N'Northwest Territories')
+INSERT INTO [dbo].[Provinces] ([Id], [Code], [Name]) VALUES (13, N'NU', N'Nunavut')
+SET IDENTITY_INSERT [dbo].[Provinces] OFF
