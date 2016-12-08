@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Quiz2MVCEF.Models.Travel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    @Html.ActionLink("Create New", "Create")
+
+    @using (Html.BeginForm("Index", "Travels", FormMethod.Get))
+    {
+        <p>
+            From Airport : @Html.TextBox("fromAirportFilter")<br/>
+            To Airport : @Html.TextBox("toAirportFilter")<br />
+            ComfortClass : @Html.DropDownList("comfortclassFilter", "All")<br/>
+            <input type="submit" value="Filter" />
+        </p>
+    }
+</div>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassportNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Departure)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Arrival)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FromAirport)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ToAirport)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ComfortClass)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PassportNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Departure)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Arrival)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FromAirport)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ToAirport)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ComfortClass)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

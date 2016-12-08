@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EFPeople
 {
-    public class PeopleContext:DbContext
+    public class PeopleContext:Context
     {
         //public PeopleContext() : base("name=PeopleDBConnectionString")
         public PeopleContext() : base()

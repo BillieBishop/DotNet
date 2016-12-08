@@ -1,0 +1,25 @@
+﻿@model SayHelloMVCGregory.Models.Person
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SayHello</title>
+</head>
+<body>
+    <div> 
+        <fieldset>
+            @Html.LabelFor(m=>m.Name)
+            @Html.TextBoxFor(m=>m.Name)
+            @Html.LabelFor(m => m.Age)
+            @Html.TextBoxFor(m => m.Age)
+
+        </fieldset>
+    </div>
+</body>
+</html>
